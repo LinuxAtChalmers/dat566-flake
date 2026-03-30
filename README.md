@@ -14,18 +14,18 @@ Add the flake input to your `flake.nix`:
 }
 ```
 
-Add the system module to `configuration.nix` which will install the necessary
-libraries:
+Add the system module to `configuration.nix` which will install Python with the
+necessary libraries:
 
 ```
 { pkgs, inputs, ... }:
 {
   imports = [
+    # import the NixOS module
     inputs.dat566.nixosModules.default
   ];
 }
 ```
-    
 
 Also add the Home Manager module, this will install the extensions for
 Visual Studio Code and set the relevant paths:
@@ -36,7 +36,7 @@ Visual Studio Code and set the relevant paths:
   home-manager.users.youruser = {
     # import the home manager module
     imports = [
-      inputs.dat566.homeModules.default
+      inputs.dat566.homeModules.vscode
     ];
   };
 }
