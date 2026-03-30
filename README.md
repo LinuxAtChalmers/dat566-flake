@@ -42,5 +42,5 @@ Visual Studio Code and set the relevant paths:
 }
 ```
 
-Rebuild your system, you can now start Visual Studio Code and everything should
-be set up for you.
+Rebuild your system, you can now start Visual Studio Code and switch to the
+**DAT566** profile. Everything should be set up for you.
