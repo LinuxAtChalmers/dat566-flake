@@ -22,6 +22,7 @@
           pandas
           matplotlib
           numpy
+          scikit-learn
         ]);
     };
 
