@@ -24,6 +24,7 @@
           pandas
           scikit-learn
           torch
+          torchvision
         ]);
     };
 
