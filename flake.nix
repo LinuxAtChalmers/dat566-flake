@@ -18,11 +18,12 @@
       python-dat566 = pkgs.python313.withPackages (python-pkgs:
         with python-pkgs; [
           ipykernel
-          notebook
-          pandas
           matplotlib
+          notebook
           numpy
+          pandas
           scikit-learn
+          torch
         ]);
     };
 
