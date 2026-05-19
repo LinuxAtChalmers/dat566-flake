@@ -55,9 +55,10 @@
       };
     };
 
-    nixosModules.default = {
-      environment.systemPackages = [
+    nixosModules.default = {pkgs, ...}: {
+      environment.systemPackages = with pkgs; [
         self.packages.${system}.python-dat566
+        ollama-cpu
       ];
     };
   };
