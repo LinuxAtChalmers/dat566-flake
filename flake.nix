@@ -17,12 +17,20 @@
     packages.${system} = {
       python-dat566 = pkgs.python313.withPackages (python-pkgs:
         with python-pkgs; [
+          chromadb
           ipykernel
+          langchain
+          langchain-chroma
+          langchain-community
+          langchain-huggingface
+          langchain-ollama
           matplotlib
           notebook
           numpy
           pandas
+          pypdf
           scikit-learn
+          sentence-transformers
           torch
           torchvision
         ]);
